@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [cxp lite Suite]">
+  <parameter name="catererID" value="ridgewellscat"/>
+  <parameter name="password" value="$uper20#CAT"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="userName" value="superadmin"/>
+  <listeners>
+    <listener class-name="com.qa.cxplite.testnglisteneres.TestngListeners"/>
+  </listeners>
+  <test name="Test">
+    <parameter name="catererID" value="ridgewellscat"/>
+    <parameter name="password" value="$uper20#CAT"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="userName" value="superadmin"/>
+    <classes>
+      <class name="com.qa.cxplite.utils.TestBase1"/>
+      <class name="com.qa.cxplite.tests.cxpLoginTest"/>
+      <class name="com.qa.cxplite.tests.ValidateHomePageTest"/>
+      <class name="com.qa.cxplite.tests.cxpCreateCustomerTest"/>
+      <class name="com.qa.cxplite.tests.CreateEventTest"/>
+      <class name="com.qa.cxplite.tests.CreateEventOrderTest"/>
+      <class name="com.qa.cxplite.tests.CreateEstimateTest"/>
+      <class name="com.qa.cxplite.tests.createbillservicetest"/>
+      <class name="com.qa.cxplite.tests.logout"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Failed suite [cxp lite Suite] -->
