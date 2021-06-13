@@ -110,11 +110,16 @@ public class CreateEstimatesPage {
 	public WebElement EventThirdParty_Close;
 	
 
+	@FindBy(how = How.XPATH, using = "//*[@id='PayeeId']")
+	public WebElement EventThirdParty_dropDown;
+	
+	
+	
 	public boolean createEstimates(String combo,String food, String alcohol, String non_alcoholic_beverages, String rental_equipment, String event_equipment,
 			String disposables,String staffing) {
 		boolean result = false;
 		try {
-			
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			WebDriverWait wait = new WebDriverWait(driver, 30);
 			Actions action = new Actions(driver);
 			action.moveToElement(eventDhtml).build().perform();
@@ -211,11 +216,11 @@ public class CreateEstimatesPage {
 			Thread.sleep(3000);
 			action.moveToElement(downArrow).build().perform();
 			Thread.sleep(2000);
-			AdditionalFee.click();
+			executor.executeScript("arguments[0].click();", AdditionalFee);
+//			AdditionalFee.click();
 			Thread.sleep(2000);
 
 			WebElement checkbox=driver.findElement(By.xpath("/html//table[@id='tblAdditinalFee']/tbody/tr[@role='row']//label"));
-			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", checkbox);
 
 //			driver.findElement(By.xpath("/html//div[@id='tblAdditinalFee_wrapper']//div[@class='dataTables_scrollHead']//table[@role='grid']//tr[@role='row']/th[1]//label")).click();
@@ -225,18 +230,21 @@ public class CreateEstimatesPage {
 			Thread.sleep(2000);
 			action.moveToElement(downArrow).build().perform();
 			Thread.sleep(2000);
-			event_thirdparty_payee_button.click();
+			executor.executeScript("arguments[0].click();", event_thirdparty_payee_button);
+//			event_thirdparty_payee_button.click();
 			Thread.sleep(1000);
 			executor.executeScript("arguments[0].click();", EventThirdParty_Add);
 			Thread.sleep(2000);
 			
-			WebElement dropDown= driver.findElement(By.xpath("//*[@id='PayeeId']"));
-			Select SelectDropDown= new Select(dropDown);
+//			WebElement dropDown= driver.findElement(By.xpath("//*[@id='PayeeId']"));
+			Select SelectDropDown= new Select(EventThirdParty_dropDown);
 			SelectDropDown.selectByVisibleText("Planner Sample 1");
 			Thread.sleep(2000);
-			EventThirdParty_Search.click();
+			executor.executeScript("arguments[0].click();", EventThirdParty_Search);
+//			EventThirdParty_Search.click();
 			Thread.sleep(2000);
-			EventThirdParty_Save.click();
+			executor.executeScript("arguments[0].click();", EventThirdParty_Save);
+//			EventThirdParty_Save.click();
 			Thread.sleep(2000);
 			executor.executeScript("arguments[0].click();", EventThirdParty_Close);
 			Thread.sleep(2000);

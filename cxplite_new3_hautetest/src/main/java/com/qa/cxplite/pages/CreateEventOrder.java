@@ -1,6 +1,7 @@
 package com.qa.cxplite.pages;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -239,15 +240,31 @@ public class CreateEventOrder {
 	@FindBy(how = How.XPATH, using = "//*[@id='btnBillServiceCancel']")
 	public WebElement EventOrder_close;
 	
+	@FindBy(how = How.XPATH, using = "//*[@id='btnPkgFinalize']")
+	public WebElement finalise_button;
+	
+	@FindBy(how = How.XPATH, using = "//form//tr[2]//td[1]//a[1]")
+	public WebElement package_item;
+	
+	@FindBy(how = How.XPATH, using = "//form//tr[2]//td[1]//a[1]")
+	public WebElement combo_item;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='txtQuantity_1_821']")
+	public WebElement combo_item_quantity;
+	
+	
+	
 
 	// ******************food********************
 	public void add_food(String quantity) throws InterruptedException {
 
 		try {
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("//*[@id='Basesearch']")).sendKeys("food");
 //			new Actions(driver).moveToElement(food).click().build().perform();
 			Thread.sleep(2000);
-			new Actions(driver).moveToElement(searchButton).click().build().perform();
+			executor.executeScript("arguments[0].click();", searchButton);
 			Thread.sleep(2000);
 
 			food_label_chkbox.click();
@@ -271,13 +288,13 @@ public class CreateEventOrder {
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
-			
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 			new Actions(driver).moveToElement(alcohol).click().build().perform();
 			Thread.sleep(4000);
-			new Actions(driver).moveToElement(searchButton).click().build().perform();
+			executor.executeScript("arguments[0].click();", searchButton);
 			Thread.sleep(4000);
-			alcohol_label_chkbox.click();
+			executor.executeScript("arguments[0].click();", alcohol_label_chkbox);
 			Thread.sleep(2000);
 //			driver.findElement(
 //					By.xpath("//tr[2]//td[1]//div[1]//label[1]//ancestor::td/parent::tr//child::td[3]/input")).click();
@@ -297,11 +314,11 @@ public class CreateEventOrder {
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
-			
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 			new Actions(driver).moveToElement(non_alcoholic_beverages).click().build().perform();
 			Thread.sleep(4000);
-			new Actions(driver).moveToElement(searchButton).click().build().perform();
+			executor.executeScript("arguments[0].click();", searchButton);
 			Thread.sleep(4000);
 			non_Alcoholic_Beverages_label_chkbox.click();
 			Thread.sleep(1000);
@@ -323,11 +340,11 @@ public class CreateEventOrder {
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
-			
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 			new Actions(driver).moveToElement(rental_equipment).click().build().perform();
 			Thread.sleep(4000);
-			new Actions(driver).moveToElement(searchButton).click().build().perform();
+			executor.executeScript("arguments[0].click();", searchButton);
 			Thread.sleep(4000);
 			// Rental_Equipment_label_chkbox.click();
 
@@ -349,11 +366,11 @@ public class CreateEventOrder {
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
-			
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 			new Actions(driver).moveToElement(event_equipment).click().build().perform();
 			Thread.sleep(4000);
-			new Actions(driver).moveToElement(searchButton).click().build().perform();
+			executor.executeScript("arguments[0].click();", searchButton);
 			Thread.sleep(4000);
 			Event_Equipment_label_chkbox.click();
 
@@ -374,11 +391,12 @@ public class CreateEventOrder {
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
-			
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 			new Actions(driver).moveToElement(disposables).click().build().perform();
 			Thread.sleep(4000);
-			new Actions(driver).moveToElement(searchButton).click().build().perform();
+			executor.executeScript("arguments[0].click();", searchButton);
+//			new Actions(driver).moveToElement(searchButton).click().build().perform();
 			Thread.sleep(4000);
 			Disposables_label_chkbox.click();
 
@@ -399,7 +417,7 @@ public class CreateEventOrder {
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
-			
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 			new Actions(driver).moveToElement(staffing).click().build().perform();
 			Thread.sleep(4000);
@@ -423,13 +441,15 @@ public class CreateEventOrder {
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", menu);
-			
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		Thread.sleep(2000);
 			new Actions(driver).moveToElement(collection_tab).click().build().perform();
 			Thread.sleep(2000);
 //			new Actions(driver).moveToElement(food).click().build().perform();
 //			Thread.sleep(2000);
-			searchButton.click();
+//			searchButton.click();
+			executor.executeScript("arguments[0].click();", searchButton);
+			new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(spncollpicon));
 			Thread.sleep(3000);
 			spncollpicon.click();
 			Thread.sleep(3000);
@@ -464,16 +484,18 @@ public class CreateEventOrder {
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", menu);
-			
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 			new Actions(driver).moveToElement(packagetab).click().build().perform();
 			Thread.sleep(2000);
 
 //			new Actions(driver).moveToElement(food).click().build().perform();
 //			Thread.sleep(2000);
-			searchButton.click();
+//			searchButton.click();
+			executor.executeScript("arguments[0].click();", searchButton);
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//form//tr[2]//td[1]//a[1]")).click();
+			new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(package_item));
+            package_item.click();
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//*[@id='txtPkgItemQuantity_3121']")).sendKeys("2");
 			Thread.sleep(1000);
@@ -489,20 +511,21 @@ public class CreateEventOrder {
 
 	public void add_combo() throws InterruptedException {
 		try {
-
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			
 			/*JavascriptExecutor js = (JavascriptExecutor) driver;
-			
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');",
 					combo_tab);*/
+			
 			Thread.sleep(2000);
 			new Actions(driver).moveToElement(combo_tab).click().build().perform();
 			Thread.sleep(2000);
 			searchButton.click();
 			Thread.sleep(4000);
-			driver.findElement(By.xpath("//form//tr[2]//td[1]//a[1]")).click();
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			combo_item.click();
 			Thread.sleep(4000);
-			driver.findElement(By.xpath("//*[@id='txtQuantity_1_821']")).sendKeys("2");
+			combo_item_quantity.sendKeys("2");
 			combo_add_button.click();
 			Thread.sleep(4000);
 
@@ -519,17 +542,12 @@ public class CreateEventOrder {
 		System.out.println("text that before clicking finalize button in Event order   : " + beforefinalizetotal);
 	    driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
 		Thread.sleep(2000);
-		WebElement finalize=driver.findElement(By.xpath("//*[@id='btnPkgFinalize']"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();", finalize);
+		executor.executeScript("arguments[0].click();", finalise_button);
 		Thread.sleep(2000);			
 		driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
 		Thread.sleep(2000); 
 		executor.executeScript("arguments[0].click();", EventOrder_close);
-//		driver.findElement(By.xpath("//*[@class='confirm btn btn-lg btn-primary']")).click();
-//		driver.findElement(By.xpath("//button[@id='btnInfoSave']")).click();
-//		Thread.sleep(2000);
-//		btnconfirm.click();
 
 	}
 

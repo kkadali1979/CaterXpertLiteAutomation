@@ -4,10 +4,13 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.JavascriptException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -154,7 +157,7 @@ public class cxpCreateCustomerPage {
 			throws Exception {
 		boolean result = false;
 		try {
-			
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			RightMenu.click();
 			Thread.sleep(2000);
 			CreateCustomerIcon.click();
@@ -208,12 +211,14 @@ public class cxpCreateCustomerPage {
 			NextButton.click();
 			SameAsCustomerAddress.click();
 			CreateButton_conatct.click();
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 		
 //			Thread.sleep(5000);
 			result = EditContact.isDisplayed();
-		
-			CloseButton.click();
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();", CloseButton);
+//			CloseButton.click();
 			Homeicon.click();
 			
 

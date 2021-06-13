@@ -149,7 +149,7 @@ public class CreateEventPage   {
 	public WebElement eventNuber;
 
 	@FindBy(how = How.XPATH, using = "//*[contains(text(),'Event Listing')]")
-	public WebElement eventListingButton;
+	public WebElement eventListingButton; //*[@id="myModalSummary"]/div/div/div[3]/div/div/div[1]/a
 
 	/*************Search Event*************/
 	@FindBy(how = How.ID, using = "baseeventid")
@@ -163,6 +163,10 @@ public class CreateEventPage   {
 
 	@FindBy(how=How.XPATH, using = "//*[@id='step_1']/div/div/div/div[2]/button")
 	public WebElement Event_Save_Button;
+	
+	@FindBy(how=How.XPATH, using = "//*[@id=\"step_1\"]/div/div/div/div[2]/button")
+	public WebElement Pop_Up;
+	
 
 	public  boolean createEventFromCustomer(String customerName, String Ae, String BeginDate, String BeginTime,
 			String EndDate, String EndTime, String EventType, String EventStatus, String EventName, String EventTheme,
@@ -226,6 +230,10 @@ public class CreateEventPage   {
 			Thread.sleep(4000);
 			createEvent.click();
 			Thread.sleep(2000);
+//			if(Pop_Up.isDisplayed()) {
+//				Pop_Up.click();
+//			}
+			
 
 			//			Event_Save_Button.click();
 			//			Thread.sleep(2000);
@@ -241,22 +249,19 @@ public class CreateEventPage   {
 			//			createEvent.click();
 			//			Thread.sleep(2000);
 
+			
 			String eventDetails = eventNuber.getText();
-
 			result = eventNuber.isDisplayed();
 			String[] eventNumber = eventDetails.split(" ");
-
 			System.out.println("Created Event Number is: " + eventNumber[1]);
-
 			Thread.sleep(2000);
 			eventListingButton.click();
 			cxpLiteDataProvider.setDataEventNumber("EventNumber", count, 0, eventNumber[1]);
-
+			
 
 
 		} catch (Exception e) {
-			WebElement popUp=driver.findElement(By.xpath("//*[@id='step_1']/div/div/div/div[2]/button"));			
-			popUp.click();
+			Pop_Up.click();
 			e.printStackTrace();
 		}
 

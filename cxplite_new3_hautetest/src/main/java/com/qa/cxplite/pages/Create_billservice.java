@@ -110,9 +110,10 @@ public class Create_billservice {
 			book = WorkbookFactory.create(file);
 			sheet = book.getSheet("EventNumber");
 			String eventNumber=sheet.getRow(1).getCell(0).toString();
-//			JavascriptExecutor executor = (JavascriptExecutor)driver;
-//			executor.executeScript("arguments[0].click();", billservicetab);
-			billservicetab.click();
+			
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();", billservicetab);
+//			billservicetab.click();
 			Thread.sleep(2000);
 			generatebillbutton.click();
 			Thread.sleep(2000);
@@ -129,6 +130,7 @@ public class Create_billservice {
 
 			if(finalizebutton.isEnabled()==true)
 			{
+				System.out.println("Finalize button is enabled");
 				finalizebutton.click();
 
 				Thread.sleep(4000);
@@ -139,6 +141,7 @@ public class Create_billservice {
 			}
 			else 
 			{
+				System.out.println("Finalize button is disabled");
 				cancelbutton.click();
 				Knife_Fork_Button.click();
 				Thread.sleep(2000);
@@ -179,7 +182,7 @@ public class Create_billservice {
 				Ready_Button.click();
 				Thread.sleep(2000);
 				driver.switchTo().alert().accept();
-				Thread.sleep(2000);
+				Thread.sleep(3000);
 				driver.switchTo().frame("header");
 				Home_Icon.click();
 				Thread.sleep(2000);
