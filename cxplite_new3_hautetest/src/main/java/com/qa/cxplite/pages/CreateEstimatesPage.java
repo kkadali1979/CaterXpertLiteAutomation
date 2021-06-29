@@ -208,9 +208,9 @@ public class CreateEstimatesPage {
 			//			
 			//			
 			driver.findElement(By.xpath("//div[@class='dataTables_scrollHeadInner']//label")).click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			saveEstimates.click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			String ProposedRevenueTotal = proposedRevenueTotal.getText();
 			System.out.println(" propsed revenue Total    :   "+ProposedRevenueTotal);
 			Thread.sleep(3000);

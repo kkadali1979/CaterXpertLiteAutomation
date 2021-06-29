@@ -19,6 +19,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -72,7 +74,7 @@ public class Create_billservice {
 
 
 	@FindBy(how=How.XPATH,using="//button[@id='btnFinalize']")
-	WebElement finalizebutton;
+	WebElement finalizebutton;    
 
 	@FindBy(how=How.XPATH,using="//*[@id='a-Scheduling']/span/i")
 	WebElement Knife_Fork_Button;
@@ -101,6 +103,9 @@ public class Create_billservice {
 	@FindBy(how=How.XPATH,using="//*[@id='btnManiSearch']")
 	WebElement Search_Button;
 
+//	@FindBy(how=How.XPATH,using="//*[@id='830921']/td[14]/a")
+//	WebElement Bill_Status;       
+	
 
 
 	public void makebill()
@@ -193,7 +198,14 @@ public class Create_billservice {
 				driver.findElement(By.xpath("//*[@id='baseeventid']")).sendKeys(eventNumber);
 				Thread.sleep(2000);
 				Search_Button.click();
-
+				Thread.sleep(3000);
+				billservicetab.click();
+				Thread.sleep(3000);
+				finalizebutton.click();
+				Thread.sleep(3000);
+				new WebDriverWait(driver, 40).until(ExpectedConditions.visibilityOf(cancelbutton));				
+				executor.executeScript("arguments[0].click();", cancelbutton);
+				
 			}
 			} 
 
