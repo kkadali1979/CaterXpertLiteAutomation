@@ -164,7 +164,7 @@ public class cxpCreateCustomerPage {
 			Thread.sleep(2000);
 			
 			Date data=new Date();
-			SimpleDateFormat s4=new SimpleDateFormat("HHmmss");
+			SimpleDateFormat s4=new SimpleDateFormat("ddHHmmss");
 			String curTime=s4.format(data);
 			String Customer="Customer."+curTime;
 			
