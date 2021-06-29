@@ -135,7 +135,7 @@ public class Create_billservice {
 
 			if(finalizebutton.isEnabled()==true)
 			{
-				System.out.println("Finalize button is enabled");
+//				System.out.println("Finalize button is enabled");
 				finalizebutton.click();
 
 				Thread.sleep(4000);
@@ -146,7 +146,7 @@ public class Create_billservice {
 			}
 			else 
 			{
-				System.out.println("Finalize button is disabled");
+//				System.out.println("Finalize button is disabled");
 				cancelbutton.click();
 				Knife_Fork_Button.click();
 				Thread.sleep(2000);
