@@ -520,7 +520,8 @@ public class CreateEventOrder {
 			Thread.sleep(2000);
 			new Actions(driver).moveToElement(combo_tab).click().build().perform();
 			Thread.sleep(2000);
-			searchButton.click();
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();", searchButton);
 			Thread.sleep(4000);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			combo_item.click();

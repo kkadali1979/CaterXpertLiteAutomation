@@ -2,32 +2,32 @@
 <testng-results ignored="8" total="17" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-29T14:16:52 IST" name="cxp lite Suite" finished-at="2021-06-29T14:25:32 IST" duration-ms="520552">
+  <suite started-at="2021-06-29T16:04:19 IST" name="cxp lite Suite" finished-at="2021-06-29T16:12:20 IST" duration-ms="480254">
     <groups>
     </groups>
-    <test started-at="2021-06-29T14:16:52 IST" name="Test" finished-at="2021-06-29T14:25:32 IST" duration-ms="520552">
+    <test started-at="2021-06-29T16:04:19 IST" name="Test" finished-at="2021-06-29T16:12:20 IST" duration-ms="480254">
       <class name="com.qa.cxplite.tests.logout">
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.cxplite.tests.logout@e383572]" started-at="2021-06-29T14:25:31 IST" name="teardown" finished-at="2021-06-29T14:25:32 IST" duration-ms="897" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.cxplite.tests.logout@e383572]" started-at="2021-06-29T16:12:19 IST" name="teardown" finished-at="2021-06-29T16:12:20 IST" duration-ms="752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.qa.cxplite.tests.logout -->
       <class name="com.qa.cxplite.tests.createbillservicetest">
-        <test-method is-config="true" signature="billservicesetup()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@1800a575]" started-at="2021-06-29T14:24:03 IST" name="billservicesetup" finished-at="2021-06-29T14:24:03 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="billservicesetup()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@1800a575]" started-at="2021-06-29T16:11:06 IST" name="billservicesetup" finished-at="2021-06-29T16:11:06 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- billservicesetup -->
-        <test-method signature="bill_service()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@1800a575]" started-at="2021-06-29T14:24:03 IST" name="bill_service" finished-at="2021-06-29T14:25:31 IST" duration-ms="88769" status="PASS">
+        <test-method signature="bill_service()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@1800a575]" started-at="2021-06-29T16:11:06 IST" name="bill_service" finished-at="2021-06-29T16:12:19 IST" duration-ms="73114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bill_service -->
       </class> <!-- com.qa.cxplite.tests.createbillservicetest -->
       <class name="com.qa.cxplite.tests.CreateEstimateTest">
-        <test-method is-config="true" signature="CreateEstimates()[pri:0, instance:com.qa.cxplite.tests.CreateEstimateTest@1c93f6e1]" started-at="2021-06-29T14:23:20 IST" name="CreateEstimates" finished-at="2021-06-29T14:23:21 IST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="CreateEstimates()[pri:0, instance:com.qa.cxplite.tests.CreateEstimateTest@1c93f6e1]" started-at="2021-06-29T16:10:28 IST" name="CreateEstimates" finished-at="2021-06-29T16:10:28 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateEstimates -->
-        <test-method signature="validateCreateEstimates(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.qa.cxplite.tests.CreateEstimateTest@1c93f6e1]" started-at="2021-06-29T14:23:21 IST" name="validateCreateEstimates" data-provider="getEstimateData" finished-at="2021-06-29T14:24:03 IST" duration-ms="42037" status="PASS">
+        <test-method signature="validateCreateEstimates(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.qa.cxplite.tests.CreateEstimateTest@1c93f6e1]" started-at="2021-06-29T16:10:28 IST" name="validateCreateEstimates" data-provider="getEstimateData" finished-at="2021-06-29T16:11:06 IST" duration-ms="38114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +75,15 @@
         </test-method> <!-- validateCreateEstimates -->
       </class> <!-- com.qa.cxplite.tests.CreateEstimateTest -->
       <class name="com.qa.cxplite.tests.cxpCreateCustomerTest">
-        <test-method is-config="true" signature="validatecreatecustomer()[pri:0, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@4ae9cfc1]" started-at="2021-06-29T14:17:19 IST" name="validatecreatecustomer" finished-at="2021-06-29T14:17:20 IST" duration-ms="424" status="PASS">
+        <test-method is-config="true" signature="validatecreatecustomer()[pri:0, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@4ae9cfc1]" started-at="2021-06-29T16:04:39 IST" name="validatecreatecustomer" finished-at="2021-06-29T16:04:39 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatecreatecustomer -->
-        <test-method signature="validateCreateCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@4ae9cfc1]" started-at="2021-06-29T14:17:20 IST" name="validateCreateCustomer" data-provider="getCreateCustomerData" finished-at="2021-06-29T14:17:52 IST" duration-ms="32002" status="PASS">
+        <test-method signature="validateCreateCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@4ae9cfc1]" started-at="2021-06-29T16:04:39 IST" name="validateCreateCustomer" data-provider="getCreateCustomerData" finished-at="2021-06-29T16:05:07 IST" duration-ms="27994" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Customer.162331]]>
+                <![CDATA[Customer.155512]]>
               </value>
             </param>
             <param index="1">
@@ -197,28 +197,41 @@
         </test-method> <!-- validateCreateCustomer -->
       </class> <!-- com.qa.cxplite.tests.cxpCreateCustomerTest -->
       <class name="com.qa.cxplite.tests.ValidateHomePageTest">
-        <test-method signature="validatehomepage()[pri:2, instance:com.qa.cxplite.tests.ValidateHomePageTest@14fc1f0]" started-at="2021-06-29T14:17:12 IST" name="validatehomepage" finished-at="2021-06-29T14:17:19 IST" duration-ms="7927" status="PASS">
+        <test-method signature="validatehomepage()[pri:2, instance:com.qa.cxplite.tests.ValidateHomePageTest@14fc1f0]" started-at="2021-06-29T16:04:33 IST" name="validatehomepage" finished-at="2021-06-29T16:04:39 IST" duration-ms="6494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatehomepage -->
       </class> <!-- com.qa.cxplite.tests.ValidateHomePageTest -->
-      <class name="com.qa.cxplite.tests.CreateEventOrderTest">
-        <test-method is-config="true" signature="eventordersetup()[pri:0, instance:com.qa.cxplite.tests.CreateEventOrderTest@632ceb35]" started-at="2021-06-29T14:19:50 IST" name="eventordersetup" finished-at="2021-06-29T14:19:50 IST" duration-ms="75" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- eventordersetup -->
-        <test-method signature="eventnumberSearch(java.lang.String)[pri:7, instance:com.qa.cxplite.tests.CreateEventOrderTest@632ceb35]" started-at="2021-06-29T14:19:50 IST" name="eventnumberSearch" data-provider="getEventNumber" finished-at="2021-06-29T14:20:04 IST" duration-ms="14072" status="PASS">
+      <class name="com.qa.cxplite.utils.TestBase1">
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.qa.cxplite.utils.TestBase1@60df60da]" started-at="2021-06-29T16:04:20 IST" name="initialization" finished-at="2021-06-29T16:04:26 IST" duration-ms="6604" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[831075]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+      </class> <!-- com.qa.cxplite.utils.TestBase1 -->
+      <class name="com.qa.cxplite.tests.CreateEventOrderTest">
+        <test-method is-config="true" signature="eventordersetup()[pri:0, instance:com.qa.cxplite.tests.CreateEventOrderTest@632ceb35]" started-at="2021-06-29T16:07:03 IST" name="eventordersetup" finished-at="2021-06-29T16:07:03 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventordersetup -->
+        <test-method signature="eventnumberSearch(java.lang.String)[pri:7, instance:com.qa.cxplite.tests.CreateEventOrderTest@632ceb35]" started-at="2021-06-29T16:07:03 IST" name="eventnumberSearch" data-provider="getEventNumber" finished-at="2021-06-29T16:07:17 IST" duration-ms="13916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[831085]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eventnumberSearch -->
-        <test-method signature="add_menu(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.qa.cxplite.tests.CreateEventOrderTest@632ceb35]" started-at="2021-06-29T14:20:04 IST" name="add_menu" data-provider="getEventOrder" finished-at="2021-06-29T14:23:20 IST" duration-ms="196709" status="PASS">
+        <test-method signature="add_menu(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.qa.cxplite.tests.CreateEventOrderTest@632ceb35]" started-at="2021-06-29T16:07:17 IST" name="add_menu" data-provider="getEventOrder" finished-at="2021-06-29T16:10:28 IST" duration-ms="190872" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -260,21 +273,8 @@
           </reporter-output>
         </test-method> <!-- add_menu -->
       </class> <!-- com.qa.cxplite.tests.CreateEventOrderTest -->
-      <class name="com.qa.cxplite.utils.TestBase1">
-        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.qa.cxplite.utils.TestBase1@60df60da]" started-at="2021-06-29T14:16:52 IST" name="initialization" finished-at="2021-06-29T14:17:03 IST" duration-ms="10869" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-      </class> <!-- com.qa.cxplite.utils.TestBase1 -->
       <class name="com.qa.cxplite.tests.cxpLoginTest">
-        <test-method signature="validatelogin(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.cxplite.tests.cxpLoginTest@5a2d131d]" started-at="2021-06-29T14:17:03 IST" name="validatelogin" finished-at="2021-06-29T14:17:11 IST" duration-ms="8388" status="PASS">
+        <test-method signature="validatelogin(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.cxplite.tests.cxpLoginTest@5a2d131d]" started-at="2021-06-29T16:04:26 IST" name="validatelogin" finished-at="2021-06-29T16:04:33 IST" duration-ms="6079" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,15 +297,15 @@
         </test-method> <!-- validatelogin -->
       </class> <!-- com.qa.cxplite.tests.cxpLoginTest -->
       <class name="com.qa.cxplite.tests.CreateEventTest">
-        <test-method is-config="true" signature="validateeventpage()[pri:0, instance:com.qa.cxplite.tests.CreateEventTest@512baff6]" started-at="2021-06-29T14:17:52 IST" name="validateeventpage" finished-at="2021-06-29T14:17:52 IST" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="validateeventpage()[pri:0, instance:com.qa.cxplite.tests.CreateEventTest@512baff6]" started-at="2021-06-29T16:05:07 IST" name="validateeventpage" finished-at="2021-06-29T16:05:08 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateeventpage -->
-        <test-method signature="validateCreateEvent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.qa.cxplite.tests.CreateEventTest@512baff6]" started-at="2021-06-29T14:17:52 IST" name="validateCreateEvent" data-provider="getCreateEventData" finished-at="2021-06-29T14:19:41 IST" duration-ms="108783" status="PASS">
+        <test-method signature="validateCreateEvent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.qa.cxplite.tests.CreateEventTest@512baff6]" started-at="2021-06-29T16:05:08 IST" name="validateCreateEvent" data-provider="getCreateEventData" finished-at="2021-06-29T16:06:54 IST" duration-ms="106508" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Customer.141726]]>
+                <![CDATA[Customer.160445]]>
               </value>
             </param>
             <param index="1">
@@ -387,11 +387,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateEvent -->
-        <test-method signature="serachEventTest(java.lang.String)[pri:5, instance:com.qa.cxplite.tests.CreateEventTest@512baff6]" started-at="2021-06-29T14:19:41 IST" name="serachEventTest" data-provider="getEventNumber" finished-at="2021-06-29T14:19:50 IST" duration-ms="8616" status="PASS">
+        <test-method signature="serachEventTest(java.lang.String)[pri:5, instance:com.qa.cxplite.tests.CreateEventTest@512baff6]" started-at="2021-06-29T16:06:54 IST" name="serachEventTest" data-provider="getEventNumber" finished-at="2021-06-29T16:07:03 IST" duration-ms="8585" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[831075]]>
+                <![CDATA[831085]]>
               </value>
             </param>
           </params>
