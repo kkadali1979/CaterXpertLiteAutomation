@@ -1,9 +1,13 @@
 package com.qa.cxplite.pages;
 
+import java.awt.Event;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.formula.functions.Even;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -74,7 +78,7 @@ public class Create_billservice {
 
 
 	@FindBy(how=How.XPATH,using="//button[@id='btnFinalize']")
-	WebElement finalizebutton;    
+	WebElement finalizebutton;
 
 	@FindBy(how=How.XPATH,using="//*[@id='a-Scheduling']/span/i")
 	WebElement Knife_Fork_Button;
@@ -101,12 +105,13 @@ public class Create_billservice {
 	WebElement CaterXpert_Lite_Link;
 
 	@FindBy(how=How.XPATH,using="//*[@id='btnManiSearch']")
-	WebElement Search_Button;
+	WebElement Search_Button;   
 
-//	@FindBy(how=How.XPATH,using="//*[@id='830921']/td[14]/a")
-//	WebElement Bill_Status;       
+	@FindBy(how=How.XPATH,using="//*[@id='cisnumber']")
+	WebElement Event_id;
 	
-
+	@FindBy(how=How.XPATH,using="//*[@id='apply_label']")
+	WebElement Event_Apply; 
 
 	public void makebill()
 	{
@@ -135,19 +140,17 @@ public class Create_billservice {
 
 			if(finalizebutton.isEnabled()==true)
 			{
-//				System.out.println("Finalize button is enabled");
 				finalizebutton.click();
-
 				Thread.sleep(4000);
-
 				System.out.println("After clicking finalize button grand total    :    "+grandtotal.getText());
 				Thread.sleep(2000);
 				cancelbutton.click();
 			}
 			else 
 			{
-//				System.out.println("Finalize button is disabled");
 				cancelbutton.click();
+				Thread.sleep(3000);
+				
 				Knife_Fork_Button.click();
 				Thread.sleep(2000);
 				driver.switchTo().frame("right");
@@ -167,16 +170,13 @@ public class Create_billservice {
 				}
 
 				// Perform the actions on new window
-				WebElement Event_id= driver.findElement(By.xpath("//*[@id='cisnumber']"));
 				Event_id.clear();
 //				System.out.println(eventNumber);
 				Event_id.sendKeys(eventNumber);
 				Thread.sleep(2000);
-				driver.findElement(By.xpath("//*[@id='apply_label']")).click();
-
+				Event_Apply.click();
 				// Switch back to original browser (first window)
-				driver.switchTo().window(winHandleBefore);
-
+				driver.switchTo().window(winHandleBefore);				
 				// Continue with original browser (first window)
 				driver.switchTo().frame("right");
 				Actions action = new Actions(driver);
@@ -205,7 +205,49 @@ public class Create_billservice {
 				Thread.sleep(3000);
 				new WebDriverWait(driver, 40).until(ExpectedConditions.visibilityOf(cancelbutton));				
 				executor.executeScript("arguments[0].click();", cancelbutton);
+				Thread.sleep(3000);
 				
+				Knife_Fork_Button.click();
+				Thread.sleep(2000);
+				driver.switchTo().frame("right");
+				Accountling_Link.click();
+				Thread.sleep(2000);
+
+				driver.switchTo().frame("header");
+				Filter_Link.click();
+				Thread.sleep(2000);
+			// Store the current window handle
+			// Switch to new window opened
+				for(String winHandle : driver.getWindowHandles())
+				{
+					driver.switchTo().window(winHandle);
+				}
+
+				// Perform the actions on new window
+				Event_id.clear();
+				Thread.sleep(2000);
+				Event_id.sendKeys(eventNumber);
+				Thread.sleep(2000);
+
+				Event_Apply.click();
+				// Switch back to original browser (first window)
+				driver.switchTo().window(winHandleBefore);
+
+				// Continue with original browser (first window)
+				driver.switchTo().frame("right");
+				driver.findElement(By.xpath("//*[@id='eventList']/table[2]/tbody/tr[3]/td[16]/a/font")).click();
+				Thread.sleep(3000);
+				driver.switchTo().frame("right");
+				driver.findElement(By.xpath("//*[@id='ack_label']")).click();
+				Thread.sleep(3000);
+				driver.switchTo().frame("right");
+				driver.findElement(By.xpath("//*[@id='invoice_label']")).click();
+				Thread.sleep(3000);
+				driver.switchTo().frame("right");
+				driver.findElement(By.xpath("//*[@id='dijit_form_Button_1_label']")).click();
+				Thread.sleep(3000);
+				
+
 			}
 			} 
 
