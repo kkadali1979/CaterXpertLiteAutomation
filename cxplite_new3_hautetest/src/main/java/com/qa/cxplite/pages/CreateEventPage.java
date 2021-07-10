@@ -273,11 +273,11 @@ public class CreateEventPage   {
 		try {
 			Thread.sleep(2000);
 			eventSearch.clear();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			eventSearch.sendKeys(eventNumber);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			eventSearchButton.click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			String EventNumberAfterSearch = eventNumberAfterSearch.getText();
 			if (EventNumberAfterSearch.equals(eventNumber))
 				result = true;

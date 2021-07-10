@@ -47,14 +47,14 @@ public class CreateEventOrderTest extends TestBase1{
 		 String[] eventNumber = eventno.split("[.]");
 			//System.out.println("Created Event Number is: " + eventNumber[0]);
 			eventorder.editbox.clear();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			eventorder.editbox.sendKeys(eventNumber[0]);
 		 
 		 eventorder.searchButton.click();
-		 Thread.sleep(2000);
+		 Thread.sleep(3000);
 		 
 		 new Actions(driver).moveToElement(eventorder.dhtml).build().perform();
-		 Thread.sleep(2000);
+		 Thread.sleep(3000);
 		 new Actions(driver).moveToElement(eventorder.event_order).click().build().perform();
 		 Thread.sleep(3000);
 	}

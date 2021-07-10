@@ -524,7 +524,8 @@ public class CreateEventOrder {
 			executor.executeScript("arguments[0].click();", searchButton);
 			Thread.sleep(4000);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			combo_item.click();
+			executor.executeScript("arguments[0].click();", combo_item);
+//			combo_item.click();
 			Thread.sleep(4000);
 			combo_item_quantity.sendKeys("2");
 			combo_add_button.click();
