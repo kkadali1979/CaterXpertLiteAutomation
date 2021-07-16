@@ -451,7 +451,8 @@ public class CreateEventOrder {
 			executor.executeScript("arguments[0].click();", searchButton);
 			new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(spncollpicon));
 			Thread.sleep(3000);
-			spncollpicon.click();
+			executor.executeScript("arguments[0].click();", spncollpicon);
+//			spncollpicon.click();
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//tr[contains(@id,'_1')][position()=2]//label")).click();
 			Thread.sleep(4000);
@@ -522,8 +523,8 @@ public class CreateEventOrder {
 			Thread.sleep(2000);
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", searchButton);
-			Thread.sleep(4000);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			Thread.sleep(4000);
 			executor.executeScript("arguments[0].click();", combo_item);
 //			combo_item.click();
 			Thread.sleep(4000);

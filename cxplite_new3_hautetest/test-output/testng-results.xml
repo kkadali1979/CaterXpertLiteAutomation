@@ -1,747 +1,744 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="15" total="32" passed="17" failed="0" skipped="0">
+<testng-results ignored="14" total="28" passed="0" failed="1" skipped="13">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-10T21:34:04 IST" name="cxp lite Suite" finished-at="2021-07-10T21:50:07 IST" duration-ms="963310">
+  <suite started-at="2021-07-11T17:15:57 IST" name="Default suite" finished-at="2021-07-11T17:15:58 IST" duration-ms="732">
     <groups>
     </groups>
-    <test started-at="2021-07-10T21:34:04 IST" name="Test1" finished-at="2021-07-10T21:43:21 IST" duration-ms="557288">
+    <test started-at="2021-07-11T17:15:57 IST" name="Default test" finished-at="2021-07-11T17:15:58 IST" duration-ms="732">
       <class name="com.qa.cxplite.tests.logout">
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.cxplite.tests.logout@5505ae1a]" started-at="2021-07-10T21:43:20 IST" name="teardown" finished-at="2021-07-10T21:43:21 IST" duration-ms="1031" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.cxplite.tests.logout -->
-      <class name="com.qa.cxplite.tests.createbillservicetest">
-        <test-method is-config="true" signature="billservicesetup()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@ca30bc1]" started-at="2021-07-10T21:41:26 IST" name="billservicesetup" finished-at="2021-07-10T21:41:26 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- billservicesetup -->
-        <test-method signature="bill_service()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@ca30bc1]" started-at="2021-07-10T21:41:26 IST" name="bill_service" finished-at="2021-07-10T21:43:20 IST" duration-ms="114110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bill_service -->
-      </class> <!-- com.qa.cxplite.tests.createbillservicetest -->
-      <class name="com.qa.cxplite.tests.CreateEstimateTest">
-        <test-method is-config="true" signature="CreateEstimates()[pri:0, instance:com.qa.cxplite.tests.CreateEstimateTest@291a7e3c]" started-at="2021-07-10T21:40:47 IST" name="CreateEstimates" finished-at="2021-07-10T21:40:48 IST" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateEstimates -->
-        <test-method signature="validateCreateEstimates(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.qa.cxplite.tests.CreateEstimateTest@291a7e3c]" started-at="2021-07-10T21:40:48 IST" name="validateCreateEstimates" data-provider="getEstimateData" finished-at="2021-07-10T21:41:26 IST" duration-ms="38393" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[13]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[14]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[15]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[16]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[17.0]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[18.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateEstimates -->
-      </class> <!-- com.qa.cxplite.tests.CreateEstimateTest -->
-      <class name="com.qa.cxplite.tests.cxpCreateCustomerTest">
-        <test-method is-config="true" signature="validatecreatecustomer()[pri:0, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@6af9fcb2]" started-at="2021-07-10T21:34:29 IST" name="validatecreatecustomer" finished-at="2021-07-10T21:34:30 IST" duration-ms="728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatecreatecustomer -->
-        <test-method signature="validateCreateCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@6af9fcb2]" started-at="2021-07-10T21:34:30 IST" name="validateCreateCustomer" data-provider="getCreateCustomerData" finished-at="2021-07-10T21:35:04 IST" duration-ms="34645" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Customer.10212128]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Government]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Customer_F]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Holiday]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Friend]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Building – 45]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[james]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[300#]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Washington]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[New York]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[20004]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[08812-228279]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[9987620907]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[test@gmail.com]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Comments]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[Directions]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[Test Bill Contact]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[Acc – 12134]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[Freeman, Beena]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[Con_F]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[Con_L]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateCustomer -->
-      </class> <!-- com.qa.cxplite.tests.cxpCreateCustomerTest -->
-      <class name="com.qa.cxplite.tests.CreateEventOrderTest">
-        <test-method is-config="true" signature="eventordersetup()[pri:0, instance:com.qa.cxplite.tests.CreateEventOrderTest@7efaad5a]" started-at="2021-07-10T21:37:12 IST" name="eventordersetup" finished-at="2021-07-10T21:37:12 IST" duration-ms="56" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- eventordersetup -->
-        <test-method signature="eventnumberSearch(java.lang.String)[pri:7, instance:com.qa.cxplite.tests.CreateEventOrderTest@7efaad5a]" started-at="2021-07-10T21:37:12 IST" name="eventnumberSearch" data-provider="getEventNumber" finished-at="2021-07-10T21:37:29 IST" duration-ms="16989" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[831129]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- eventnumberSearch -->
-        <test-method signature="add_menu(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.qa.cxplite.tests.CreateEventOrderTest@7efaad5a]" started-at="2021-07-10T21:37:29 IST" name="add_menu" data-provider="getEventOrder" finished-at="2021-07-10T21:40:47 IST" duration-ms="198054" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[11.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[12.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[13.0]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[14.0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[15.0]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[16.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_menu -->
-      </class> <!-- com.qa.cxplite.tests.CreateEventOrderTest -->
-      <class name="com.qa.cxplite.utils.TestBase1">
-        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.qa.cxplite.utils.TestBase1@1fc32e4f]" started-at="2021-07-10T21:34:05 IST" name="initialization" finished-at="2021-07-10T21:34:15 IST" duration-ms="10200" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-      </class> <!-- com.qa.cxplite.utils.TestBase1 -->
-      <class name="com.qa.cxplite.tests.ValidateHomePageTest">
-        <test-method signature="validatehomepage()[pri:2, instance:com.qa.cxplite.tests.ValidateHomePageTest@1869fbd2]" started-at="2021-07-10T21:34:23 IST" name="validatehomepage" finished-at="2021-07-10T21:34:29 IST" duration-ms="5703" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatehomepage -->
-      </class> <!-- com.qa.cxplite.tests.ValidateHomePageTest -->
-      <class name="com.qa.cxplite.tests.cxpLoginTest">
-        <test-method signature="validatelogin(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.cxplite.tests.cxpLoginTest@2f67b837]" started-at="2021-07-10T21:34:15 IST" name="validatelogin" finished-at="2021-07-10T21:34:23 IST" duration-ms="7945" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ridgewellscat]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[superadmin]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[$uper20#CAT]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatelogin -->
-      </class> <!-- com.qa.cxplite.tests.cxpLoginTest -->
-      <class name="com.qa.cxplite.tests.CreateEventTest">
-        <test-method is-config="true" signature="validateeventpage()[pri:0, instance:com.qa.cxplite.tests.CreateEventTest@6cce16f4]" started-at="2021-07-10T21:35:04 IST" name="validateeventpage" finished-at="2021-07-10T21:35:04 IST" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateeventpage -->
-        <test-method signature="validateCreateEvent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.qa.cxplite.tests.CreateEventTest@6cce16f4]" started-at="2021-07-10T21:35:04 IST" name="validateCreateEvent" data-provider="getCreateEventData" finished-at="2021-07-10T21:37:01 IST" duration-ms="116174" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Customer.10213435]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Freeman, Beena]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[07/13/2021]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2:15 AM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[07/13/2021]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[10:15 PM]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[School Order]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Definite]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Buffet Dinner]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Corporate]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[Holiday]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[Disposables]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Not Applicable]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[1.23456789E8]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[abc@abc.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateEvent -->
-        <test-method signature="serachEventTest(java.lang.String)[pri:5, instance:com.qa.cxplite.tests.CreateEventTest@6cce16f4]" started-at="2021-07-10T21:37:01 IST" name="serachEventTest" data-provider="getEventNumber" finished-at="2021-07-10T21:37:12 IST" duration-ms="11726" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[831129]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serachEventTest -->
-      </class> <!-- com.qa.cxplite.tests.CreateEventTest -->
-    </test> <!-- Test1 -->
-    <test started-at="2021-07-10T21:43:23 IST" name="Test" finished-at="2021-07-10T21:50:07 IST" duration-ms="404583">
-      <class name="com.qa.cxplite.tests.logout">
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.cxplite.tests.logout@54e7df6a]" started-at="2021-07-10T21:50:06 IST" name="teardown" finished-at="2021-07-10T21:50:07 IST" duration-ms="1010" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.cxplite.tests.logout@3e8c3cb]" started-at="2021-07-11T17:15:58 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003958612" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.qa.cxplite.tests.logout -->
       <class name="com.qa.cxplite.tests.QuickCreateEventTest">
-        <test-method is-config="true" signature="validateeventpage()[pri:0, instance:com.qa.cxplite.tests.QuickCreateEventTest@6581dc0a]" started-at="2021-07-10T21:44:15 IST" name="validateeventpage" finished-at="2021-07-10T21:44:15 IST" duration-ms="60" status="PASS">
+        <test-method is-config="true" signature="validateeventpage()[pri:0, instance:com.qa.cxplite.tests.QuickCreateEventTest@74ea2410]" started-at="2021-07-11T17:15:58 IST" name="validateeventpage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003958394" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateeventpage -->
-        <test-method signature="validateCreateEvent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.qa.cxplite.tests.QuickCreateEventTest@6581dc0a]" started-at="2021-07-10T21:44:15 IST" name="validateCreateEvent" data-provider="getCreateEventData" finished-at="2021-07-10T21:46:06 IST" duration-ms="111024" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Customer.184801]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Freeman, Beena]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[07/13/2021]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2:15 AM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[07/13/2021]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[10:15 PM]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Delivery]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Definite]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Buffet Dinner]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Corporate]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[Holiday]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[Disposables]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Not Applicable]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[1.23456789E8]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[abc@abc.com]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="validateCreateEvent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.qa.cxplite.tests.QuickCreateEventTest@74ea2410]" started-at="2021-07-11T17:15:58 IST" name="validateCreateEvent" data-provider="getCreateEventData" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null
+at com.qa.cxplite.tests.QuickCreateEventTest.getCreateEventData(QuickCreateEventTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateEvent -->
-        <test-method signature="serachEventTest(java.lang.String)[pri:5, instance:com.qa.cxplite.tests.QuickCreateEventTest@6581dc0a]" started-at="2021-07-10T21:46:06 IST" name="serachEventTest" data-provider="getEventNumber" finished-at="2021-07-10T21:46:18 IST" duration-ms="11720" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[831130]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="serachEventTest(java.lang.String)[pri:5, instance:com.qa.cxplite.tests.QuickCreateEventTest@74ea2410]" started-at="2021-07-11T17:15:58 IST" name="serachEventTest" data-provider="getEventNumber" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null
+at com.qa.cxplite.tests.QuickCreateEventTest.getEventNumber(QuickCreateEventTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serachEventTest -->
       </class> <!-- com.qa.cxplite.tests.QuickCreateEventTest -->
       <class name="com.qa.cxplite.tests.createbillservicetest">
-        <test-method is-config="true" signature="billservicesetup()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@6ce86ce1]" started-at="2021-07-10T21:49:50 IST" name="billservicesetup" finished-at="2021-07-10T21:49:50 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@2cf3d63b]" started-at="2021-07-11T17:15:57 IST" name="initialization" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003957905" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method is-config="true" signature="billservicesetup()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@2cf3d63b]" started-at="2021-07-11T17:15:58 IST" name="billservicesetup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003958045" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- billservicesetup -->
-        <test-method signature="bill_service()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@6ce86ce1]" started-at="2021-07-10T21:49:50 IST" name="bill_service" finished-at="2021-07-10T21:50:06 IST" duration-ms="16228" status="PASS">
+        <test-method signature="bill_service()[pri:0, instance:com.qa.cxplite.tests.createbillservicetest@2cf3d63b]" started-at="2021-07-11T17:15:58 IST" name="bill_service" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bill_service -->
       </class> <!-- com.qa.cxplite.tests.createbillservicetest -->
+      <class name="com.qa.cxplite.tests.cxplite_changerequestTest">
+        <test-method is-config="true" signature="change_request()[pri:0, instance:com.qa.cxplite.tests.cxplite_changerequestTest@17f62e33]" started-at="2021-07-11T17:15:58 IST" name="change_request" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003958456" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- change_request -->
+        <test-method signature="changerequest()[pri:9, instance:com.qa.cxplite.tests.cxplite_changerequestTest@17f62e33]" started-at="2021-07-11T17:15:58 IST" name="changerequest" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changerequest -->
+      </class> <!-- com.qa.cxplite.tests.cxplite_changerequestTest -->
+      <class name="com.qa.cxplite.tests.CreateEstimateTest">
+        <test-method is-config="true" signature="CreateEstimates()[pri:0, instance:com.qa.cxplite.tests.CreateEstimateTest@76b1e9b8]" started-at="2021-07-11T17:15:58 IST" name="CreateEstimates" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003958486" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateEstimates -->
+        <test-method signature="validateCreateEstimates(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.qa.cxplite.tests.CreateEstimateTest@76b1e9b8]" started-at="2021-07-11T17:15:58 IST" name="validateCreateEstimates" data-provider="getEstimateData" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxpLiteDataProvider" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxpLiteDataProvider" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxpLiteDataProvider" is null
+at com.qa.cxplite.tests.CreateEstimateTest.getEstimateData(CreateEstimateTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateEstimates -->
+      </class> <!-- com.qa.cxplite.tests.CreateEstimateTest -->
       <class name="com.qa.cxplite.tests.cxpCreateCustomerTest">
-        <test-method is-config="true" signature="validatecreatecustomer()[pri:0, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@673be18f]" started-at="2021-07-10T21:43:43 IST" name="validatecreatecustomer" finished-at="2021-07-10T21:43:43 IST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="validatecreatecustomer()[pri:0, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@27406a17]" started-at="2021-07-11T17:15:58 IST" name="validatecreatecustomer" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003958521" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatecreatecustomer -->
-        <test-method signature="validateCreateCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@673be18f]" started-at="2021-07-10T21:43:43 IST" name="validateCreateCustomer" data-provider="getCreateCustomerData" finished-at="2021-07-10T21:44:15 IST" duration-ms="31820" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Customer.10213435]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Government]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Customer_F]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Holiday]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Friend]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Building – 45]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[james]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[300#]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Washington]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[New York]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[20004]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[08812-228279]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[9987620907]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[test@gmail.com]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Comments]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[Directions]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[Test Bill Contact]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[Acc – 12134]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[Freeman, Beena]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[Con_F]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[Con_L]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="validateCreateCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.cxplite.tests.cxpCreateCustomerTest@27406a17]" started-at="2021-07-11T17:15:58 IST" name="validateCreateCustomer" data-provider="getCreateCustomerData" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null
+at com.qa.cxplite.tests.cxpCreateCustomerTest.getCreateCustomerData(cxpCreateCustomerTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateCustomer -->
       </class> <!-- com.qa.cxplite.tests.cxpCreateCustomerTest -->
-      <class name="com.qa.cxplite.utils.TestBase1">
-        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.qa.cxplite.utils.TestBase1@1c33c17b]" started-at="2021-07-10T21:43:23 IST" name="initialization" finished-at="2021-07-10T21:43:30 IST" duration-ms="7047" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-      </class> <!-- com.qa.cxplite.utils.TestBase1 -->
-      <class name="com.qa.cxplite.tests.ValidateHomePageTest">
-        <test-method signature="validatehomepage()[pri:2, instance:com.qa.cxplite.tests.ValidateHomePageTest@1e097d59]" started-at="2021-07-10T21:43:37 IST" name="validatehomepage" finished-at="2021-07-10T21:43:43 IST" duration-ms="5461" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatehomepage -->
-      </class> <!-- com.qa.cxplite.tests.ValidateHomePageTest -->
       <class name="com.qa.cxplite.tests.CreateEventOrderTest">
-        <test-method is-config="true" signature="eventordersetup()[pri:0, instance:com.qa.cxplite.tests.CreateEventOrderTest@39de3d36]" started-at="2021-07-10T21:46:18 IST" name="eventordersetup" finished-at="2021-07-10T21:46:18 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="eventordersetup()[pri:0, instance:com.qa.cxplite.tests.CreateEventOrderTest@7674f035]" started-at="2021-07-11T17:15:58 IST" name="eventordersetup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003958152" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eventordersetup -->
-        <test-method signature="eventnumberSearch(java.lang.String)[pri:7, instance:com.qa.cxplite.tests.CreateEventOrderTest@39de3d36]" started-at="2021-07-10T21:46:18 IST" name="eventnumberSearch" data-provider="getEventNumber" finished-at="2021-07-10T21:46:35 IST" duration-ms="17648" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[831130]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="eventnumberSearch(java.lang.String)[pri:7, instance:com.qa.cxplite.tests.CreateEventOrderTest@7674f035]" started-at="2021-07-11T17:15:58 IST" name="eventnumberSearch" data-provider="getEventNumber" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null
+at com.qa.cxplite.tests.CreateEventOrderTest.getEventNumber(CreateEventOrderTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eventnumberSearch -->
-        <test-method signature="add_menu(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.qa.cxplite.tests.CreateEventOrderTest@39de3d36]" started-at="2021-07-10T21:46:35 IST" name="add_menu" data-provider="getEventOrder" finished-at="2021-07-10T21:49:50 IST" duration-ms="194676" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[11.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[12.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[13.0]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[14.0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[15.0]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[16.0]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="add_menu(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.qa.cxplite.tests.CreateEventOrderTest@7674f035]" started-at="2021-07-11T17:15:58 IST" name="add_menu" data-provider="getEventOrder" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null
+at com.qa.cxplite.tests.CreateEventOrderTest.getEventOrder(CreateEventOrderTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_menu -->
       </class> <!-- com.qa.cxplite.tests.CreateEventOrderTest -->
+      <class name="com.qa.cxplite.tests.ValidateHomePageTest">
+        <test-method signature="validatehomepage()[pri:2, instance:com.qa.cxplite.tests.ValidateHomePageTest@173ed316]" started-at="2021-07-11T17:15:58 IST" name="validatehomepage" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatehomepage -->
+      </class> <!-- com.qa.cxplite.tests.ValidateHomePageTest -->
       <class name="com.qa.cxplite.tests.cxpLoginTest">
-        <test-method signature="validatelogin(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.cxplite.tests.cxpLoginTest@5bf0fe62]" started-at="2021-07-10T21:43:30 IST" name="validatelogin" finished-at="2021-07-10T21:43:37 IST" duration-ms="7792" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ridgewellscat]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[superadmin]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[$uper20#CAT]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="validatelogin(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.cxplite.tests.cxpLoginTest@69e153c5]" started-at="2021-07-11T17:15:58 IST" name="validatelogin" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'catererID' is required by @Test on method validatelogin but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'catererID' is required by @Test on method validatelogin but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatelogin -->
       </class> <!-- com.qa.cxplite.tests.cxpLoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- cxp lite Suite -->
+      <class name="com.qa.cxplite.tests.cxpEventHistoryTest">
+        <test-method is-config="true" signature="eventhistorysetup()[pri:0, instance:com.qa.cxplite.tests.cxpEventHistoryTest@2af004b]" started-at="2021-07-11T17:15:58 IST" name="eventhistorysetup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003958535" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventhistorysetup -->
+        <test-method signature="eventnumberSearch(java.lang.String)[pri:10, instance:com.qa.cxplite.tests.cxpEventHistoryTest@2af004b]" started-at="2021-07-11T17:15:58 IST" name="eventnumberSearch" data-provider="getEventNumber" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplitedataprovider" is null
+at com.qa.cxplite.tests.cxpEventHistoryTest.getEventNumber(cxpEventHistoryTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventnumberSearch -->
+        <test-method signature="eventhistorytabledata()[pri:11, instance:com.qa.cxplite.tests.cxpEventHistoryTest@2af004b]" started-at="2021-07-11T17:15:58 IST" name="eventhistorytabledata" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeTest on method initialization but has not been marked @Optional or defined
+in C:\Users\mani\AppData\Local\Temp\testng-eclipse--1101707200\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventhistorytabledata -->
+      </class> <!-- com.qa.cxplite.tests.cxpEventHistoryTest -->
+      <class name="com.qa.cxplite.tests.CreateEventTest">
+        <test-method is-config="true" signature="validateeventpage()[pri:0, instance:com.qa.cxplite.tests.CreateEventTest@25ce9dc4]" started-at="2021-07-11T17:15:58 IST" name="validateeventpage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1626003958279" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateeventpage -->
+        <test-method signature="validateCreateEvent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.qa.cxplite.tests.CreateEventTest@25ce9dc4]" started-at="2021-07-11T17:15:58 IST" name="validateCreateEvent" data-provider="getCreateEventData" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null
+at com.qa.cxplite.tests.CreateEventTest.getCreateEventData(CreateEventTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateEvent -->
+        <test-method signature="serachEventTest(java.lang.String)[pri:5, instance:com.qa.cxplite.tests.CreateEventTest@25ce9dc4]" started-at="2021-07-11T17:15:58 IST" name="serachEventTest" data-provider="getEventNumber" finished-at="2021-07-11T17:15:58 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.qa.cxplite.dataproviders.cxplite_dataprovider.getTestData(String)" because "this.cxplite_dataprovider" is null
+at com.qa.cxplite.tests.CreateEventTest.getEventNumber(CreateEventTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serachEventTest -->
+      </class> <!-- com.qa.cxplite.tests.CreateEventTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

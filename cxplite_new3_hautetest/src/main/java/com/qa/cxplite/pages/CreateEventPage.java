@@ -229,11 +229,7 @@ public class CreateEventPage   {
 			secondnext.click();
 			Thread.sleep(4000);
 			createEvent.click();
-			Thread.sleep(2000);
-//			if(Pop_Up.isDisplayed()) {
-//				Pop_Up.click();
-//			}
-			
+			Thread.sleep(3000);
 
 			//			Event_Save_Button.click();
 			//			Thread.sleep(2000);
@@ -254,9 +250,10 @@ public class CreateEventPage   {
 			result = eventNuber.isDisplayed();
 			String[] eventNumber = eventDetails.split(" ");
 			System.out.println("Created Event Number is: " + eventNumber[1]);
-			Thread.sleep(2000);
-			eventListingButton.click();
 			cxpLiteDataProvider.setDataEventNumber("EventNumber", count, 0, eventNumber[1]);
+			Thread.sleep(4000);
+			((JavascriptExecutor)driver).executeScript("arguments[0].click();", eventListingButton);
+			Thread.sleep(2000);
 			
 
 

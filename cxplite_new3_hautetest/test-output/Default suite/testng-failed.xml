@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.qa.cxplite.tests.CreateEventOrderTest">
         <methods>
@@ -11,6 +11,70 @@
           <include name="eventnumberSearch"/>
         </methods>
       </class> <!-- com.qa.cxplite.tests.CreateEventOrderTest -->
+      <class name="com.qa.cxplite.tests.ValidateHomePageTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="validatehomepage"/>
+        </methods>
+      </class> <!-- com.qa.cxplite.tests.ValidateHomePageTest -->
+      <class name="com.qa.cxplite.tests.cxplite_changerequestTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="change_request"/>
+          <include name="changerequest"/>
+        </methods>
+      </class> <!-- com.qa.cxplite.tests.cxplite_changerequestTest -->
+      <class name="com.qa.cxplite.tests.createbillservicetest">
+        <methods>
+          <include name="bill_service"/>
+          <include name="initialization"/>
+          <include name="billservicesetup"/>
+        </methods>
+      </class> <!-- com.qa.cxplite.tests.createbillservicetest -->
+      <class name="com.qa.cxplite.tests.CreateEstimateTest">
+        <methods>
+          <include name="validateCreateEstimates"/>
+          <include name="initialization"/>
+          <include name="CreateEstimates"/>
+        </methods>
+      </class> <!-- com.qa.cxplite.tests.CreateEstimateTest -->
+      <class name="com.qa.cxplite.tests.QuickCreateEventTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="serachEventTest"/>
+          <include name="validateCreateEvent"/>
+          <include name="validateeventpage"/>
+        </methods>
+      </class> <!-- com.qa.cxplite.tests.QuickCreateEventTest -->
+      <class name="com.qa.cxplite.tests.cxpEventHistoryTest">
+        <methods>
+          <include name="eventnumberSearch"/>
+          <include name="initialization"/>
+          <include name="eventhistorytabledata"/>
+          <include name="eventhistorysetup"/>
+        </methods>
+      </class> <!-- com.qa.cxplite.tests.cxpEventHistoryTest -->
+      <class name="com.qa.cxplite.tests.cxpLoginTest">
+        <methods>
+          <include name="validatelogin"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- com.qa.cxplite.tests.cxpLoginTest -->
+      <class name="com.qa.cxplite.tests.CreateEventTest">
+        <methods>
+          <include name="validateeventpage"/>
+          <include name="initialization"/>
+          <include name="validateCreateEvent"/>
+          <include name="serachEventTest"/>
+        </methods>
+      </class> <!-- com.qa.cxplite.tests.CreateEventTest -->
+      <class name="com.qa.cxplite.tests.cxpCreateCustomerTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="validateCreateCustomer"/>
+          <include name="validatecreatecustomer"/>
+        </methods>
+      </class> <!-- com.qa.cxplite.tests.cxpCreateCustomerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
