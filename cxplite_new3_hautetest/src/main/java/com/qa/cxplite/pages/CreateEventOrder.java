@@ -538,7 +538,9 @@ public class CreateEventOrder {
 		}
 
 		new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(btnaddclose));
-		new Actions(driver).moveToElement(btnaddclose).click().build().perform();
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", btnaddclose);
+//		new Actions(driver).moveToElement(btnaddclose).click().build().perform();
 
 		Thread.sleep(4000);
 
@@ -546,7 +548,6 @@ public class CreateEventOrder {
 		System.out.println("text that before clicking finalize button in Event order   : " + beforefinalizetotal);
 	    driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
 		Thread.sleep(3000);
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", finalise_button);
 		Thread.sleep(3000);			
 		driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
