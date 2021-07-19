@@ -263,9 +263,9 @@ public class CreateEventOrder {
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("//*[@id='Basesearch']")).sendKeys("food");
 //			new Actions(driver).moveToElement(food).click().build().perform();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			executor.executeScript("arguments[0].click();", searchButton);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 
 			food_label_chkbox.click();
 			new Select(AddMenuddlcourse_food_items_selectbox).selectByVisibleText("Buff");
@@ -289,13 +289,13 @@ public class CreateEventOrder {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Actions(driver).moveToElement(alcohol).click().build().perform();
 			Thread.sleep(4000);
 			executor.executeScript("arguments[0].click();", searchButton);
 			Thread.sleep(4000);
 			executor.executeScript("arguments[0].click();", alcohol_label_chkbox);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 //			driver.findElement(
 //					By.xpath("//tr[2]//td[1]//div[1]//label[1]//ancestor::td/parent::tr//child::td[3]/input")).click();
 			alcohol_qty.sendKeys(quantity);
@@ -315,7 +315,7 @@ public class CreateEventOrder {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Actions(driver).moveToElement(non_alcoholic_beverages).click().build().perform();
 			Thread.sleep(4000);
 			executor.executeScript("arguments[0].click();", searchButton);
@@ -341,7 +341,7 @@ public class CreateEventOrder {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Actions(driver).moveToElement(rental_equipment).click().build().perform();
 			Thread.sleep(4000);
 			executor.executeScript("arguments[0].click();", searchButton);
@@ -367,7 +367,7 @@ public class CreateEventOrder {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Actions(driver).moveToElement(event_equipment).click().build().perform();
 			Thread.sleep(4000);
 			executor.executeScript("arguments[0].click();", searchButton);
@@ -392,7 +392,7 @@ public class CreateEventOrder {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Actions(driver).moveToElement(disposables).click().build().perform();
 			Thread.sleep(4000);
 			executor.executeScript("arguments[0].click();", searchButton);
@@ -418,14 +418,15 @@ public class CreateEventOrder {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", item);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Actions(driver).moveToElement(staffing).click().build().perform();
 			Thread.sleep(4000);
 
 //			new Select(staffing_Name_select_dropdown).selectByVisibleText("Porter");
-			 new Select(staffing_Name_select_dropdown).selectByIndex(1);
+			new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(staffing_Name_select_dropdown));
+			new Select(staffing_Name_select_dropdown).selectByIndex(1);
 
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			driver.findElement(By.xpath("//select[@id='AddPersonnelddlStaffName_1']//ancestor::tr//td[2]//input"))
 					.sendKeys(quantity);
 			Thread.sleep(3000);
@@ -442,11 +443,11 @@ public class CreateEventOrder {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", menu);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 			new Actions(driver).moveToElement(collection_tab).click().build().perform();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 //			new Actions(driver).moveToElement(food).click().build().perform();
-//			Thread.sleep(2000);
+//			Thread.sleep(3000);
 //			searchButton.click();
 			executor.executeScript("arguments[0].click();", searchButton);
 			new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(spncollpicon));
@@ -486,15 +487,15 @@ public class CreateEventOrder {
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", menu);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Actions(driver).moveToElement(packagetab).click().build().perform();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 
 //			new Actions(driver).moveToElement(food).click().build().perform();
-//			Thread.sleep(2000);
+//			Thread.sleep(3000);
 //			searchButton.click();
 			executor.executeScript("arguments[0].click();", searchButton);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(package_item));
             package_item.click();
 			Thread.sleep(3000);
@@ -518,9 +519,9 @@ public class CreateEventOrder {
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');",
 					combo_tab);*/
 			
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Actions(driver).moveToElement(combo_tab).click().build().perform();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", searchButton);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
@@ -544,14 +545,14 @@ public class CreateEventOrder {
 		String beforefinalizetotal = driver.findElement(By.id("spOrderTotal")).getText();
 		System.out.println("text that before clicking finalize button in Event order   : " + beforefinalizetotal);
 	    driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", finalise_button);
-		Thread.sleep(2000);			
+		Thread.sleep(3000);			
 		driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
-		Thread.sleep(2000); 
+		Thread.sleep(4000); 
 		executor.executeScript("arguments[0].click();", EventOrder_close);
-
+		Thread.sleep(3000);
 	}
 
 }

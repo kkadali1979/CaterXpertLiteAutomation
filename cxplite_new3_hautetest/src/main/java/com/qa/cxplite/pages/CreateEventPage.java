@@ -187,13 +187,13 @@ public class CreateEventPage   {
 			Actions a = new Actions(driver);
 			a.moveToElement(customerdhtml).build().perform();
 			customerCreateEventIcon.click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Select(ae).selectByVisibleText(Ae);
 			Thread.sleep(3000);
 			beginDate.click();
 			Thread.sleep(3000);
 			datePicker.pickDate(BeginDate);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			beginTime.click();
 			Thread.sleep(4000);
 
@@ -202,7 +202,7 @@ public class CreateEventPage   {
 
 			//************************
 
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			endDate.click();
 			Thread.sleep(1000);
 			datePicker.pickDate(EndDate);
@@ -212,7 +212,7 @@ public class CreateEventPage   {
 
 			timePicker.pickTime(EndTime);
 
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			new Select(eventType).selectByVisibleText(EventType);
 			new Select(eventStatus).selectByVisibleText(EventStatus);
 			eventname.sendKeys(EventName);
@@ -232,18 +232,18 @@ public class CreateEventPage   {
 			Thread.sleep(3000);
 
 			//			Event_Save_Button.click();
-			//			Thread.sleep(2000);
+			//			Thread.sleep(3000);
 
 			//			new Select(county).selectByVisibleText(County);
 			//			homePhone.sendKeys(Homephone);
 			//
 			//			email.clear();
 			//			email.sendKeys(Email);
-			//            Thread.sleep(2000);
+			//            Thread.sleep(3000);
 			//			secondnext.click();
-			//			Thread.sleep(2000);
+			//			Thread.sleep(3000);
 			//			createEvent.click();
-			//			Thread.sleep(2000);
+			//			Thread.sleep(3000);
 
 			
 			String eventDetails = eventNuber.getText();
@@ -253,7 +253,7 @@ public class CreateEventPage   {
 			cxpLiteDataProvider.setDataEventNumber("EventNumber", count, 0, eventNumber[1]);
 			Thread.sleep(4000);
 			((JavascriptExecutor)driver).executeScript("arguments[0].click();", eventListingButton);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			
 
 
@@ -268,7 +268,7 @@ public class CreateEventPage   {
 	public boolean searchEvent(String eventNumber) throws Exception {
 		boolean result = false;
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			eventSearch.clear();
 			Thread.sleep(3000);
 			eventSearch.sendKeys(eventNumber);
